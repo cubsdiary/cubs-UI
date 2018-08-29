@@ -3,10 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import Notification from '@/components/notification'
 import '@/common/stylus/reset.styl'
 Vue.config.productionTip = false
 
+Vue.use(Notification)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
